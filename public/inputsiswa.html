@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tambah siswa</title>
+    <style>
+        form {
+            background-color: #cf9595;
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        button, input[type="submit"] {
+            margin-top: 10px;
+            background-color: #8f4d4d;
+            color: #665353;
+            border: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>tambah siswa</h2>
+    <a href="datasiswa.html" style="margin-right: 20px;">kembali</a>
+
+    <form action="">
+        <label for="nisn">NISN:</label> <br>
+        <input type="text" id="nisn" name="nisn"> <br>
+
+        <label for="nama">Nama siswa:</label> <br>
+        <input type="text" id="nama" name="nama"> <br>
+
+        <label for="jk">Jenis Kelamin:</label> <br>
+        <select id="jk" name="jk">
+            <option value="laki-laki">Laki-laki</option>
+            <option value="perempuan">Perempuan</option>
+        </select> <br><br>
+
+        <label for="agama">Agama:</label> <br>
+        <select id="agama" name="agama">
+            <option value="islam">Islam</option>
+            <option value="kristen">Kristen</option>
+            <option value="hindu">Hindu</option>
+            <option value="budha">Budha</option>
+            <option value="konghucu">Konghucu</option>
+        </select> <br><br>
+
+        <label for="alamat">Alamat:</label> <br>
+        <textarea id="alamat" name="alamat"></textarea> <br><br>
+
+        <input type="submit" value="simpan">
+    </form>
+</body>
+</html>
